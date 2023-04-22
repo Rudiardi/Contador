@@ -1,0 +1,18 @@
+.containerGeral{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #aa15;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.textoRelogio{
+    background-color: #2525;
+    color: #1c52bd;    
+    font-size: 52px;
+    height: 20%;
+
+    
+
+}
