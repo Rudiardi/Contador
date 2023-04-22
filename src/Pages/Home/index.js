@@ -3,16 +3,17 @@ import './index.css';
 
 function Home(){
     function OpenHome(){
-        fetch('http://worldtimeapi.org/api/ip')
-        .then(response => response.json())
-        .then(data => console.log(data));
+        fetch("http://worldtimeapi.org/api/ip")
+            .then((response) => response.json())
+            .then((data) => setVarHome(data.datetime));
     }
 
+    const [varHome, setVarHome] = useState([]);
     useEffect(() => {OpenHome()});
 
     return(
         <div className="containerGeral">
-            <text className="textoRelogio">00h:01m:00s</text>
+            <text className="textoRelogio">{varHome}</text>
         </div>
     )
 }
