@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Dhenny tua bunda é deliciosamente linda e gostosa
+          teste
         </p>
         <a
           className="App-link"
